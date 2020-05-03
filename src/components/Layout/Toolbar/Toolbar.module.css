@@ -1,0 +1,19 @@
+.toolbar{
+    text-align: center;
+    padding-bottom: .05rem;
+}
+
+.covid{
+    color: black;
+}
+
+.tracker{
+    color: green;
+}
+
+.p{
+    font-weight: 500;
+    padding: 0.5rem;
+    margin: 0;
+    font-size: 1.5rem;
+}

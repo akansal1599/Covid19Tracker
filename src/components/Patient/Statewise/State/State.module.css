@@ -1,0 +1,40 @@
+.delta{
+    font-size: 11px;
+}
+
+.confirmed{
+    color:red;
+}
+
+.recovered{
+    color: green;
+}
+
+.td{
+    text-align: right;
+    font-size: .9rem;
+    padding: .25rem;
+}
+
+.data{
+    padding: .25rem;
+}
+
+/*.tr:nth-child(2n-1) .td{*/
+/*    border: solid 1px #d9d4d7;*/
+/*    background-color: white;*/
+/*}*/
+/*.tr:nth-child(2n-1) .data{*/
+/*    border: solid 1px #d9d4d7;*/
+/*    background-color: white;*/
+/*}*/
+
+.tr:nth-child(2n) .td{
+    border: solid 1px #d9d4d7;
+    background-color: #d9d4d7;
+}
+
+.tr:nth-child(2n) .data{
+    border: solid 1px #d9d4d7;
+    background-color: #d9d4d7;
+}
