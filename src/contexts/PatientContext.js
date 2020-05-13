@@ -4,16 +4,7 @@ import axios from "axios";
 export const PatientContext = createContext();
 
 const PatientContextProvider = (props) => {
-    const[total, setTotal] = useState({
-        // active: "",
-        // confirmed: "",
-        // deaths: "",
-        // deltaconfirmed: "",
-        // deltadeaths: "",
-        // deltarecovered: "",
-        // lastupdatedtime: "",
-        // recovered: ""
-    });
+    const[total, setTotal] = useState({});
 
     const[states, setStates] = useState([{}]);
 
@@ -22,7 +13,6 @@ const PatientContextProvider = (props) => {
         let str = "https://api.covid19india.org/data.json";
         axios.get(str)
             .then(response => {
-                 console.log(response.data.statewise[0]);
                 setTotal(response.data.statewise[0]);
                 setStates(response.data.statewise.slice(1));
             });

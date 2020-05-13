@@ -11,10 +11,7 @@ const Stats = (props) => {
             <h4>{array[props.id]}</h4>
             <div>
                 <h1>{total[props.subject]}</h1>
-                {/*{props.subject!=='active' ? */}
-                {/*<h6>{total[`delta${props.subject}`]}</h6>*/}
                 <h6>{delta}</h6>
-                {/*}*/}
             </div>
         </div>
     )

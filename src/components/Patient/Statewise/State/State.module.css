@@ -29,12 +29,16 @@
 /*    background-color: white;*/
 /*}*/
 
-.tr:nth-child(2n) .td{
+.tr:nth-child(2n){
     border: solid 1px #d9d4d7;
     background-color: #d9d4d7;
 }
 
-.tr:nth-child(2n) .data{
+.tr:nth-child(2n){
     border: solid 1px #d9d4d7;
     background-color: #d9d4d7;
+}
+
+.tr:hover{
+    background-color: #bababa;
 }

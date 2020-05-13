@@ -13,7 +13,7 @@ const Statewise = (props) => {
         >
             <td className={classes.td2}>{obj.city}</td>
             <td className={classes.td2}>{obj.category}</td>
-            <td className={classes.td2}><a href={obj.contact}>{obj.nameoftheorganisation}</a></td>
+            <td className={classes.td2}><a href={obj.contact} target="_blank">{obj.nameoftheorganisation}</a></td>
             <td className={classes.td2}>{obj.descriptionandorserviceprovided}</td>
         </tr>)
     })
@@ -22,7 +22,7 @@ const Statewise = (props) => {
         <div className={classes.div}>
             <table className={classes.table}>
                 <thead>
-                <tr>
+                <tr className={classes.tr}>
                     <td className={classes.td}>City</td>
                     <td className={classes.td}>Category</td>
                     <td className={classes.td}>Organisation</td>

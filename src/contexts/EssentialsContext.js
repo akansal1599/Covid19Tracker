@@ -12,19 +12,10 @@ const EssentialsContextProvider = (props) => {
     const[states, setStates] = useState(["All States"]);
 
     const[cities, setCities] = useState(["All Cities"]);
-    //
+
     const[categories, setCategories] = useState(["All Categories"]);
 
     const[selected, setSelected] = useState(["All States","All Cities","All Categories"]);
-
-    // const fun = () =>{
-    //     console.log(states[4610]);
-    //     // const temp = states[4610];
-    //     // console.log(temp);
-    //     // setStates(temp);
-    //     // console.log(states);
-    // }
-
 
     useEffect(() => {
         const fetchData = async () => {
@@ -49,9 +40,6 @@ const EssentialsContextProvider = (props) => {
             return "";
         });
         setStates([...states,...temp]);
-        // if(data.length>0){
-        //     setSelected(["Bihar",...selected]);
-        // }
 
     },[data]);
 
@@ -106,10 +94,6 @@ const EssentialsContextProvider = (props) => {
         }
         InputChangeHandler(2,"All Categories");
     },[selected[1]])
-
-    // const StateChangeHandler = (event) => {
-    //     console.log(event);
-    // }
 
     const sorter = (obj) => {
         obj.sort((a,b) => {

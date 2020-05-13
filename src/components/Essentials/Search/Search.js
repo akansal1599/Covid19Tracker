@@ -15,23 +15,22 @@ const Search = (props) => {
     const StateChangeHandler = (event) => {
         event.preventDefault();
         InputChangeHandler(0,event.target.value);
-         console.log(event.target.value);
+         // console.log(event.target.value);
     }
     const CityChangeHandler = (event) => {
         event.preventDefault();
         InputChangeHandler(1,event.target.value);
-        console.log(event.target.value);
+        // console.log(event.target.value);
     }
     const CategoryChangeHandler = (event) => {
         event.preventDefault();
         InputChangeHandler(2,event.target.value);
-        console.log(event.target.value);
+        // console.log(event.target.value);
     }
 
     const submitHandler = (event) => {
         event.preventDefault();
         SubmitHandler();
-        // console.log(visible);
     }
 
 
