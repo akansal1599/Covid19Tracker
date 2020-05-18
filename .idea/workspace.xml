@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61374043-d8ad-48c5-832b-8468f52eb7e2" name="Default Changelist" comment="" />
+    <list default="true" id="61374043-d8ad-48c5-832b-8468f52eb7e2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Essentials/Search/Search.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Essentials/Search/Search.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Essentials/Statewise/Statewise.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Essentials/Statewise/Statewise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Essentials/Statewise/Statewise.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Essentials/Statewise/Statewise.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Toolbar/Drawer/Drawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Toolbar/Drawer/Drawer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Toolbar/Toolbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Toolbar/Toolbar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Patient/Statewise/State/State.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Statewise/State/State.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Patient/Statewise/State/State.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Statewise/State/State.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Patient/Statewise/Statewise.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Statewise/Statewise.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Patient/Total/Stats/Stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Total/Stats/Stats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Patient/Total/Stats/Stats.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Total/Stats/Stats.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Patient/Total/Total.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Total/Total.module.css" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +30,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Covid19Tracker" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bOcWtXxJorJQ5Sq1OFCNScfaOZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -61,7 +74,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588506615924</updated>
-      <workItem from="1588506621065" duration="50630000" />
+      <workItem from="1588506621065" duration="51114000" />
+      <workItem from="1589823283465" duration="6300000" />
     </task>
     <servers />
   </component>
@@ -73,7 +87,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

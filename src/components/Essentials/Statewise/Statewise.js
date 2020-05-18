@@ -11,10 +11,10 @@ const Statewise = (props) => {
         return(<tr key={id}
                    className={classes.tr}
         >
-            <td className={classes.td2}>{obj.city}</td>
-            <td className={classes.td2}>{obj.category}</td>
-            <td className={classes.td2}><a href={obj.contact} target="_blank">{obj.nameoftheorganisation}</a></td>
-            <td className={classes.td2}>{obj.descriptionandorserviceprovided}</td>
+            <td className={classes.td2}><span>{obj.city}</span></td>
+            <td className={classes.td2}><span>{obj.category}</span></td>
+            <td className={classes.td2}><a href={obj.contact} target="_blank"><span>{obj.nameoftheorganisation}</span></a></td>
+            <td className={classes.td2}><span className={classes.span}>{obj.descriptionandorserviceprovided}</span></td>
         </tr>)
     })
 
@@ -23,10 +23,10 @@ const Statewise = (props) => {
             <table className={classes.table}>
                 <thead>
                 <tr className={classes.tr}>
-                    <td className={classes.td}>City</td>
-                    <td className={classes.td}>Category</td>
-                    <td className={classes.td}>Organisation</td>
-                    <td className={classes.td}>Description</td>
+                    <td className={classes.tdhead}>City</td>
+                    <td className={classes.tdhead}>Category</td>
+                    <td className={classes.tdhead}>Organisation</td>
+                    <td className={classes.tdhead}>Description</td>
                 </tr>
                 </thead>
                 <tbody>{data}</tbody>

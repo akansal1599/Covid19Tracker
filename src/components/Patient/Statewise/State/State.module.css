@@ -1,5 +1,6 @@
 .delta{
     font-size: 11px;
+    display: inline-block;
 }
 
 .confirmed{
@@ -41,4 +42,10 @@
 
 .tr:hover{
     background-color: #bababa;
+}
+
+@media screen and (max-width: 764px){
+    .delta{
+        display: block;
+    }
 }

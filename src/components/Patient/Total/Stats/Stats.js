@@ -7,7 +7,7 @@ const Stats = (props) => {
     const array = ["","Confirmed","Active","Recovered","Deaths"];
     const delta = total[`delta${props.subject}`] > 0 ? `+${total[`delta${props.subject}`]}` : "";
     return(
-        <div className={classes.stats}>
+        <div className={classes.stats} id={props.id}>
             <h4>{array[props.id]}</h4>
             <div>
                 <h1>{total[props.subject]}</h1>

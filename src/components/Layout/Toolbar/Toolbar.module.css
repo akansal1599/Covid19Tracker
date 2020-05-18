@@ -20,18 +20,18 @@
     padding: 0.5rem;
     margin: 0;
     font-size: 1.5rem;
-    padding-right: 4rem;
+    /*padding-right: 4rem;*/
 }
 
 @media screen and (max-width: 585px){
-    .p{
-        padding-right: 1.23rem;
-    }
+    /*.p{*/
+    /*    padding-right: 1.23rem;*/
+    /*}*/
 
     .toolbar{
         display: flex;
         justify-content: space-between;
-        width: 35rem;
+        width: 100%;
     }
 }
 

@@ -1,6 +1,6 @@
 .div{
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
 }
 
 .table{
@@ -11,10 +11,13 @@
 }
 
 .td{
-    padding-inline-end: 1.5rem;
-    padding-inline-start: .5rem;
+    /*padding-inline-end: 1.5rem;*/
+    /*padding-inline-start: .5rem;*/
+    padding: 0.15rem;
     border: solid 1px #808080;
     background: #808080;
+    padding-top: 0.5rem;
+    padding-bottom: 0.4rem;
 }
 
 
