@@ -33,14 +33,18 @@
 /*}*/
 
 .tr:nth-child(2n){
-    border: solid 1px #d9d4d7;
-    background-color: #d9d4d7;
+    border: solid 1px #dcdcdc;
+    background-color: #dcdcdc;
 }
 
-.tr:nth-child(2n){
-    border: solid 1px #d9d4d7;
-    background-color: #d9d4d7;
+.tr:nth-child(2n-1){
+    background-color: #f0f0f0;
+    border: solid 1px #f0f0f0;
 }
+/*.tr:nth-child(2n){*/
+/*    border: solid 1px #dcdcdc;*/
+/*    background-color: #d9ddcdcdc4d7;*/
+/*}*/
 
 .tr:hover{
     background-color: #bababa;

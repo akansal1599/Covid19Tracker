@@ -9,6 +9,7 @@
     width: 70%;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    border-spacing: 0.18rem;
 }
 
 /*.td{*/
@@ -27,8 +28,7 @@
     /*padding-inline-end: 1.5rem;*/
     /*padding-inline-start: .5rem;*/
     padding: 0.15rem;
-    border: solid 1px #808080;
-    background: #808080;
+    background: #808080ad;
     padding-top: 0.5rem;
     padding-bottom: 0.4rem;
     text-align: center;
@@ -44,8 +44,13 @@
 
 
 .tr:nth-child(2n){
-    border: solid 1px #d9d4d7;
-    background-color: #d9d4d7;
+    border: solid 1px #dcdcdc;
+    background-color: #dcdcdc;
+}
+
+.tr:nth-child(2n-1){
+    background-color: #f0f0f0;
+    border: solid 1px #f0f0f0;
 }
 
 .tr:hover{
