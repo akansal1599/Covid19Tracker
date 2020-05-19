@@ -2,9 +2,10 @@ import React,{useContext} from 'react';
 
 import {EssentialsContext} from "../../../contexts/EssentialsContext";
 import classes from './Statewise.module.css';
+import Spinner from "../../Layout/Spinner/Spinner";
 
 const Statewise = (props) => {
-    const {visible} = useContext(EssentialsContext);
+    const {visible,loading} = useContext(EssentialsContext);
     let id = 0;
     const data = visible.map(obj => {
         id = id+1;
@@ -13,7 +14,7 @@ const Statewise = (props) => {
         >
             <td className={classes.td2}><span>{obj.city}</span></td>
             <td className={classes.td2}><span>{obj.category}</span></td>
-            <td className={classes.td2}><a href={obj.contact} target="_blank"><span>{obj.nameoftheorganisation}</span></a></td>
+            <td className={classes.td2}><a href={obj.contact} target="_blank" rel="noopener noreferrer" ><span>{obj.nameoftheorganisation}</span></a></td>
             <td className={classes.td2}><span className={classes.span}>{obj.descriptionandorserviceprovided}</span></td>
         </tr>)
     })

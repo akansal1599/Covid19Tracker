@@ -1,17 +1,22 @@
 import React, {useContext} from "react";
-import {PatientContext} from "../../../../contexts/PatientContext";
+
 import classes from './Stats.module.css';
+import CountUp from 'react-countup';
+import { useCountUp } from 'react-countup';
 
 const Stats = (props) => {
-    const {total} = useContext(PatientContext);
-    const array = ["","Confirmed","Active","Recovered","Deaths"];
-    const delta = total[`delta${props.subject}`] > 0 ? `+${total[`delta${props.subject}`]}` : "";
+    // const {total} = useContext(PatientContext);
+    // const array = ["","Total Cases","Active","Recovered","Deaths"];
+
+    // const data = total[props.subject];
+    const { countUp } = useCountUp({ end: props.count });
+
     return(
         <div className={classes.stats} id={props.id}>
-            <h4>{array[props.id]}</h4>
+            <h4 style={{margin: "1rem 0"}}>{props.title}</h4>
             <div>
-                <h1>{total[props.subject]}</h1>
-                <h6>{delta}</h6>
+                <h1 style={{margin: "1rem 0"}}>{countUp}</h1>
+                <h5 style={{margin: "1rem 0"}}>{props.delta}</h5>
             </div>
         </div>
     )

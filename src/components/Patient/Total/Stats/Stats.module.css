@@ -5,6 +5,7 @@
     margin: 0.4rem;
     border: 4px solid;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 .stats:nth-child(1){
@@ -40,3 +41,9 @@
     border-color: grey;
     grid-area: four;
 }
+
+/*@media screen and (min-width: 585px){*/
+/*    .stats{*/
+/*        font-size: 1.5rem;*/
+/*    }*/
+/*}*/

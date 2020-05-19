@@ -29,7 +29,7 @@ const Statewise = (props) => {
                     <td className={classes.td}>Confirmed</td>
                     <td className={classes.td}>Active</td>
                     <td className={classes.td}>Recovered</td>
-                    <td className={classes.td}>Deceased</td>
+                    <td className={classes.td}>Deaths</td>
                 </tr>
                 </thead>
                 <tbody>{data}</tbody>

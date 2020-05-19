@@ -17,6 +17,8 @@ const EssentialsContextProvider = (props) => {
 
     const[selected, setSelected] = useState(["All States","All Cities","All Categories"]);
 
+    const[loading, setLoading] = useState(false);
+
     useEffect(() => {
         const fetchData = async () => {
             const result = await axios(
@@ -119,6 +121,7 @@ const EssentialsContextProvider = (props) => {
     }
 
     const SubmitHandler = () => {
+        setLoading(true);
         let temp = [];
         data.map(obj => {
             if(selected[0]==="All States"){
@@ -150,7 +153,7 @@ const EssentialsContextProvider = (props) => {
 
 
     return (
-        <EssentialsContext.Provider value={{data,states,cities,categories,selected,visible,InputChangeHandler,SubmitHandler}}>
+        <EssentialsContext.Provider value={{data,states,cities,categories,selected,visible,loading,InputChangeHandler,SubmitHandler}}>
             {props.children}
         </EssentialsContext.Provider>
     );

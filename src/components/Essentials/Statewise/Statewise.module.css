@@ -11,16 +11,17 @@
     margin-bottom: 2rem;
 }
 
-.td{
-    /*padding-inline-end: 1.5rem;*/
-    /*padding-inline-start: .5rem;*/
-    padding: 0.15rem;
-    border: solid 1px #808080;
-    background: #808080;
-    padding-top: 0.5rem;
-    padding-bottom: 0.4rem;
+/*.td{*/
+/*    !*padding-inline-end: 1.5rem;*!*/
+/*    !*padding-inline-start: .5rem;*!*/
+/*    padding: 0.15rem;*/
+/*    border: solid 1px #808080;*/
+/*    background: #808080;*/
+/*    padding-top: 0.5rem;*/
+/*    padding-bottom: 0.4rem;*/
+/*    border-radius: 6px;*/
 
-}
+/*}*/
 
 .tdhead{
     /*padding-inline-end: 1.5rem;*/
@@ -31,12 +32,14 @@
     padding-top: 0.5rem;
     padding-bottom: 0.4rem;
     text-align: center;
+    border-radius: 6px;
 }
 
 .td2{
     text-align: center;
     font-size: .9rem;
     padding: .25rem;
+    border-radius: 6px;
 }
 
 

@@ -10,23 +10,24 @@
 }
 
 .tracker{
-    color: rebeccapurple;
+    color: black;
     font-size: 1.1rem;
     margin: 0;
 }
 
 .p{
     font-weight: 700;
-    padding: 0.5rem;
+    padding: .5rem 4rem .5rem .5rem;
     margin: 0;
     font-size: 1.5rem;
+    letter-spacing: 0.1rem;
     /*padding-right: 4rem;*/
 }
 
 @media screen and (max-width: 585px){
-    /*.p{*/
-    /*    padding-right: 1.23rem;*/
-    /*}*/
+    .p{
+        padding-right: 0.4rem;
+    }
 
     .toolbar{
         display: flex;
@@ -38,7 +39,12 @@
 @media screen and (min-width: 585px){
     .tracker{
         margin-left: 3.3rem;
+        /*font-size: 1.5rem;*/
     }
+
+    /*.covid{*/
+    /*    font-size: 2rem;*/
+    /*}*/
 }
 
 

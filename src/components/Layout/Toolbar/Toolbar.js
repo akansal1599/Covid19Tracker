@@ -10,7 +10,7 @@ const Toolbar = (props) => {
             <TemporaryDrawer/>
             <div className={classes.p}>
                 <NavLink to="/" exact style={{textDecoration:"none"}}>
-                    <p className={classes.covid}>COVID19</p>
+                    <p className={classes.covid}>COVID<span style={{color:"green"}}>19</span></p>
                     <p className={classes.tracker}>TRACKER</p>
                 </NavLink>
             </div>

@@ -3,17 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="61374043-d8ad-48c5-832b-8468f52eb7e2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Essentials/Essentials.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Essentials/Essentials.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Essentials/Search/Search.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Essentials/Search/Search.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Essentials/Statewise/Statewise.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Essentials/Statewise/Statewise.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Essentials/Statewise/Statewise.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Essentials/Statewise/Statewise.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Layout/Toolbar/Drawer/Drawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Toolbar/Drawer/Drawer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Toolbar/Toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Toolbar/Toolbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Layout/Toolbar/Toolbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Toolbar/Toolbar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Patient/Statewise/State/State.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Statewise/State/State.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Patient/Patient.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Patient.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Patient/Statewise/State/State.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Statewise/State/State.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Patient/Statewise/Statewise.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Statewise/Statewise.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Patient/Statewise/Statewise.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Statewise/Statewise.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Patient/Total/Stats/Stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Total/Stats/Stats.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Patient/Total/Stats/Stats.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Total/Stats/Stats.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Patient/Total/Total.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Total/Total.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Patient/Total/Total.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Total/Total.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/EssentialsContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/EssentialsContext.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -75,7 +82,8 @@
       <option name="presentableId" value="Default" />
       <updated>1588506615924</updated>
       <workItem from="1588506621065" duration="51114000" />
-      <workItem from="1589823283465" duration="6300000" />
+      <workItem from="1589823283465" duration="7412000" />
+      <workItem from="1589875032287" duration="7601000" />
     </task>
     <servers />
   </component>
