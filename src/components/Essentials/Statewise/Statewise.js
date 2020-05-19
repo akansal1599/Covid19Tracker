@@ -1,11 +1,11 @@
-import React,{useContext} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 
 import {EssentialsContext} from "../../../contexts/EssentialsContext";
 import classes from './Statewise.module.css';
-import Spinner from "../../Layout/Spinner/Spinner";
 
 const Statewise = (props) => {
-    const {visible,loading} = useContext(EssentialsContext);
+    const {visible} = useContext(EssentialsContext);
+
     let id = 0;
     const data = visible.map(obj => {
         id = id+1;
