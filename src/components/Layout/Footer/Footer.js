@@ -1,6 +1,5 @@
 import React from "react";
 
-import FavoriteIcon from '@material-ui/icons/Favorite';
 import classes from "./Footer.module.css";
 
 const Footer = (props) => {

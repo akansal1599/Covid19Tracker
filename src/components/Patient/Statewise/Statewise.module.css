@@ -23,6 +23,18 @@
     font-weight: bold;
 }
 
+.td:nth-of-type(2){
+    color: red;
+}
+
+.td:nth-of-type(3){
+    color: blue;
+}
+
+.td:nth-of-type(4){
+    color: green;
+}
+
 
 
 /*@media screen and (min-width: 926px) {*/

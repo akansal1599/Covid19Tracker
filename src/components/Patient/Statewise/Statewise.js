@@ -19,6 +19,19 @@ const Statewise = (props) => {
                       deltadeaths={state.deltadeaths>0 ? `+${state.deltadeaths}` : ""}
         />)
     })
+    let confirmed = "Confirmed";
+    let recovered = "Recovered";
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            confirmed = "Cnfrmd";
+            recovered = "Rcvd";
+        }
+    }
+
+    var x = window.matchMedia("(max-width: 415px)")
+    myFunction(x) // Call listener function at run time
+    x.addEventListener('DOMContentLoaded',myFunction) // Attach listener function on state changes
+
 
     return(
         <div className={classes.div}>
@@ -26,9 +39,9 @@ const Statewise = (props) => {
                 <thead>
                 <tr>
                     <td className={classes.td}>State/UT</td>
-                    <td className={classes.td}>Confirmed</td>
+                    <td className={classes.td}>{confirmed}</td>
                     <td className={classes.td}>Active</td>
-                    <td className={classes.td}>Recovered</td>
+                    <td className={classes.td}>{recovered}</td>
                     <td className={classes.td}>Deaths</td>
                 </tr>
                 </thead>
