@@ -2,9 +2,17 @@
     text-align: center;
     color: rebeccapurple;
     font-weight: 700;
+    margin: 0.5rem
 }
 
 .icon{
     color: red;
+}
 
+.footer {
+    background-color: #fff;
+    opacity: .5;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

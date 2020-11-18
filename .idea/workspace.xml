@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="61374043-d8ad-48c5-832b-8468f52eb7e2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Essentials/Essentials.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Essentials/Essentials.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Essentials/Statewise/Statewise.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Essentials/Statewise/Statewise.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Layout/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Patient/Statewise/Statewise.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Statewise/Statewise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Footer/Footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Footer/Footer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Patient/Patient.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Patient.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Patient/Statewise/Statewise.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Statewise/Statewise.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -37,7 +42,8 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -71,6 +77,13 @@
       <workItem from="1589875032287" duration="11667000" />
       <workItem from="1589960385684" duration="1042000" />
       <workItem from="1590451679948" duration="6615000" />
+      <workItem from="1590681158319" duration="822000" />
+      <workItem from="1590979714553" duration="636000" />
+      <workItem from="1591094084220" duration="335000" />
+      <workItem from="1591322483105" duration="92000" />
+      <workItem from="1605392205633" duration="13670000" />
+      <workItem from="1605562891840" duration="3385000" />
+      <workItem from="1605647121814" duration="8710000" />
     </task>
     <servers />
   </component>

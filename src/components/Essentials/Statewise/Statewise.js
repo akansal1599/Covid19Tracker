@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext} from 'react';
 
 import {EssentialsContext} from "../../../contexts/EssentialsContext";
 import classes from './Statewise.module.css';
