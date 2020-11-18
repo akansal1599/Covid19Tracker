@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="61374043-d8ad-48c5-832b-8468f52eb7e2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Essentials/Essentials.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Essentials/Essentials.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Essentials/Statewise/Statewise.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Essentials/Statewise/Statewise.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Footer/Footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Footer/Footer.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Patient/Patient.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Patient.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Patient/Statewise/Statewise.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Statewise/Statewise.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +75,7 @@
       <workItem from="1591322483105" duration="92000" />
       <workItem from="1605392205633" duration="13670000" />
       <workItem from="1605562891840" duration="3385000" />
-      <workItem from="1605647121814" duration="8710000" />
+      <workItem from="1605647121814" duration="8976000" />
     </task>
     <servers />
   </component>
