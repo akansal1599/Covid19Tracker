@@ -35,8 +35,9 @@ const Statewise = (props) => {
                 <tbody {...getTableBodyProps()}>
                 {rows.map(row => {
                     prepareRow(row);
+                    // console.log(row.id);
                     return (
-                        <tr className={classes.tr} {...row.getRowProps()}>
+                        <tr key={1} className={classes.tr} {...row.getRowProps()}>
                             {row.cells.map(cell => (
                                 <td className={classes.td2} {...cell.getCellProps}>{cell.render('Cell')}</td>
                             ))}

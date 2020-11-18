@@ -17,6 +17,9 @@ const EssentialsContextProvider = (props) => {
 
     const[selected, setSelected] = useState(["All States","All Cities","All Categories"]);
 
+    var selectedState = selected[0];
+    var selectedCity = selected[1];
+
     useEffect(() => {
         const fetchData = async () => {
             const result = await axios(
@@ -41,6 +44,7 @@ const EssentialsContextProvider = (props) => {
         });
         setStates([...states,...temp]);
 
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[data]);
 
     useEffect(() => {
@@ -69,7 +73,9 @@ const EssentialsContextProvider = (props) => {
         setCategories(["All Categories"]);
         InputChangeHandler(1,"All Cities");
         InputChangeHandler(2,"All Categories");
-    },[selected[0]])
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[selectedState])
 
     useEffect(() => {
         if(selected[1]!=="All Cities" && cities.length>1){
@@ -85,6 +91,7 @@ const EssentialsContextProvider = (props) => {
                         }
                     }
                 }
+                return "";
             })
             temp = sorter(temp);
             setCategories(["All Categories",...temp]);
@@ -93,7 +100,9 @@ const EssentialsContextProvider = (props) => {
             setCategories(["All Categories"]);
         }
         InputChangeHandler(2,"All Categories");
-    },[selected[1]])
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[selectedCity])
 
     const sorter = (obj) => {
         obj.sort((a,b) => {
@@ -143,6 +152,7 @@ const EssentialsContextProvider = (props) => {
                     }
                 }
             }
+            return "";
         });
         setVisible([...temp]);
 

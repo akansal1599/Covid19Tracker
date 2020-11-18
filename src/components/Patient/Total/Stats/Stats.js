@@ -1,14 +1,8 @@
-import React, {useContext} from "react";
-
+import React from "react";
 import classes from './Stats.module.css';
-import CountUp from 'react-countup';
 import { useCountUp } from 'react-countup';
 
 const Stats = (props) => {
-    // const {total} = useContext(PatientContext);
-    // const array = ["","Total Cases","Active","Recovered","Deaths"];
-
-    // const data = total[props.subject];
     const { countUp } = useCountUp({ end: props.count });
 
     return(

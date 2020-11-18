@@ -12,8 +12,9 @@ export const COLUMNS = [
     },
     {
         Header: "Organisation",
-        accessor: "nameoftheorganistaion",
+        accessor: "nameoftheorganisation",
         Cell: ( cellInfo => {
+            // console.log(cellInfo);
             const data = cellInfo.cell.row.original;
             return (
                 <a href={String(data.contact)} target="_blank" rel="noopener noreferrer">{data.nameoftheorganisation}
@@ -25,7 +26,7 @@ export const COLUMNS = [
         Header: "Description",
         accessor: "descriptionandorserviceprovided",
         Cell: (cellInfo => {
-            console.log(cellInfo.cell.row.original);
+             // console.log(cellInfo);
             return (<span className={classes.span}>{cellInfo.cell.row.original.descriptionandorserviceprovided}</span>)
         })
     }
