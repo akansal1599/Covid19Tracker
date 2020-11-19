@@ -8,7 +8,7 @@ const Statewise = (props) => {
     const {states} = useContext(PatientContext);
     const columns = useMemo(() => COLUMNS, []);
     const data = states;
-
+    // console.log(states);
     const {
         getTableProps,
         getTableBodyProps,
