@@ -1,36 +1,50 @@
-import React, {useContext} from 'react';
-
+import React, {useContext, useMemo} from 'react';
+import {useSortBy, useTable} from 'react-table';
 import {EssentialsContext} from "../../../contexts/EssentialsContext";
 import classes from './Statewise.module.css';
+import {COLUMNS} from "./columns";
 
 const Statewise = (props) => {
     const {visible} = useContext(EssentialsContext);
+    const columns = useMemo(() => COLUMNS,[]);
+    const data = visible;
 
-    let id = 0;
-    const data = visible.map(obj => {
-        id = id+1;
-        return(<tr key={id}
-                   className={classes.tr}
-        >
-            <td className={classes.td2}><span>{obj.city}</span></td>
-            <td className={classes.td2}><span>{obj.category}</span></td>
-            <td className={classes.td2}><a href={obj.contact} target="_blank" rel="noopener noreferrer" ><span>{obj.nameoftheorganisation}</span></a></td>
-            <td className={classes.td2}><span className={classes.span}>{obj.descriptionandorserviceprovided}</span></td>
-        </tr>)
-    })
+    const {
+        getTableProps,
+        getTableBodyProps,
+        headerGroups,
+        rows,
+        prepareRow
+    } = useTable({
+        columns,
+        data
+    }, useSortBy)
 
     return(
         <div className={classes.div}>
-            <table className={classes.table}>
+            <table className={classes.table} {...getTableProps()}>
                 <thead>
-                <tr className={classes.tr}>
-                    <td className={classes.tdhead}>City</td>
-                    <td className={classes.tdhead}>Category</td>
-                    <td className={classes.tdhead}>Organisation</td>
-                    <td className={classes.tdhead}>Description</td>
-                </tr>
+                {headerGroups.map(headerGroup => (
+                    <tr className={classes.tr} {...headerGroup.getHeaderGroupProps()}>
+                        {headerGroup.headers.map(column => (
+                            <th className={classes.tdhead} {...column.getHeaderProps()}>{column.render('Header')}</th>
+                        ))}
+                    </tr>
+                ))}
                 </thead>
-                <tbody>{data}</tbody>
+                <tbody {...getTableBodyProps()}>
+                {rows.map(row => {
+                    prepareRow(row);
+                    // console.log(row.id);
+                    return (
+                        <tr key={row.id} className={classes.tr} {...row.getRowProps()}>
+                            {row.cells.map(cell => (
+                                <td className={classes.td2} {...cell.getCellProps}>{cell.render('Cell')}</td>
+                            ))}
+                        </tr>
+                    )
+                })}
+                </tbody>
             </table>
         </div>
     )

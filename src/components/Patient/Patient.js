@@ -1,7 +1,7 @@
 import React from "react";
 
 import Total from "./Total/Total";
-import Statewise from "./Statewise/StatewiseReactTable";
+import Statewise from "./Statewise/Statewise";
 import PatientContextProvider from "../../contexts/PatientContext";
 import classes from "./Patient.module.css";
 

@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="61374043-d8ad-48c5-832b-8468f52eb7e2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Essentials/Essentials.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Essentials/Essentials.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Essentials/Statewise/StatewiseReactTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Essentials/Statewise/Statewise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Essentials/Statewise/Table/columns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Essentials/Statewise/columns.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Patient/Patient.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Patient.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Patient/Statewise/State/State.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Patient/Statewise/State/State.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Patient/Statewise/StatewiseReactTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Statewise/Statewise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Patient/Statewise/Table/columns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Patient/Statewise/columns.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +47,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Essentials/Statewise" />
+      <recent name="$PROJECT_DIR$/src/components/Patient/Statewise" />
       <recent name="$PROJECT_DIR$/src/components/Patient" />
     </key>
   </component>
@@ -76,7 +86,7 @@
       <workItem from="1605392205633" duration="13670000" />
       <workItem from="1605562891840" duration="3385000" />
       <workItem from="1605647121814" duration="8976000" />
-      <workItem from="1605728654708" duration="6633000" />
+      <workItem from="1605728654708" duration="8034000" />
     </task>
     <servers />
   </component>

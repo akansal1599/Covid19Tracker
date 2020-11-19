@@ -1,55 +1,75 @@
-import React, {useContext} from "react";
+import React, {useContext, useMemo} from 'react'
+import {useTable, useSortBy} from 'react-table';
 import {PatientContext} from "../../../contexts/PatientContext";
-import State from "./State/State";
-import classes from './Statewise.module.css'
+import {COLUMNS} from './columns';
+import classes from './Statewise.module.css';
 
 const Statewise = (props) => {
     const {states} = useContext(PatientContext);
-    let id = 1000;
-    const data = states.map(state => {
-        id = id+1;
-        return(<State name={state.state}
-                      key={state.id}
-                      confirmed={state.confirmed}
-                      deltaconfirmed={state.deltaconfirmed>0 ? `+${state.deltaconfirmed}` : ""}
-                      active={state.active}
-                      recovered={state.recovered}
-                      deltarecovered={state.deltarecovered>0 ? `+${state.deltarecovered}` : ""}
-                      deaths={state.deaths}
-                      deltadeaths={state.deltadeaths>0 ? `+${state.deltadeaths}` : ""}
-        />)
-    })
-    let confirmed = "Confirmed";
-    let recovered = "Recovered";
-    function myFunction(x) {
-        if (x.matches) { // If media query matches
-            confirmed = "Cnfrmd";
-            recovered = "Rcvd";
+    const columns = useMemo(() => COLUMNS, []);
+    const data = states;
+    // console.log(states);
+    const {
+        getTableProps,
+        getTableBodyProps,
+        headerGroups,
+        rows,
+        prepareRow
+    } = useTable({
+        columns,
+        data
+    }, useSortBy)
+
+    const deltaFunc = (name,id) => {
+        const delta = ["confirmed", "recovered", "deaths"];
+        const color = ["red", "green", "grey"];
+        if(delta.includes(name)){
+            const change = data[id][`delta${name}`];
+            if(change>0){
+                return (<span style={{color:`${color[delta.indexOf(name)]}`}}>+{change}</span>)
+            }
         }
     }
 
-    var x = window.matchMedia("(max-width: 415px)")
-    myFunction(x) // Call listener function at run time
-    x.addEventListener('DOMContentLoaded',myFunction) // Attach listener function on state changes
-
-
     return(
         <div className={classes.div}>
-            <table className={classes.table}>
+            <table className={classes.table} {...getTableProps()}>
                 <thead>
-                <tr>
-                    <td className={classes.td}>State/UT</td>
-                    <td className={classes.td}>{confirmed}</td>
-                    <td className={classes.td}>Active</td>
-                    <td className={classes.td}>{recovered}</td>
-                    <td className={classes.td}>Deaths</td>
-                </tr>
+                    {headerGroups.map(headerGroup => (
+                        <tr {...headerGroup.getHeaderGroupProps()}>
+                            {headerGroup.headers.map(column => (
+                                <th className={classes.th}{...column.getHeaderProps(column.getSortByToggleProps())}>
+                                    {column.render('Header')}
+                                    <span>
+                                        {column.isSorted ? (column.isSortedDesc ? ' ↓' : ' ↑') : ''}
+                                    </span>
+                                </th>
+                            ))}
+                        </tr>
+                        )
+                    )}
                 </thead>
-                <tbody>{data}</tbody>
+                <tbody {...getTableBodyProps()}>
+                {rows.map(row => {
+                    prepareRow(row)
+                    return (
+                        <tr className={classes.tr} {...row.getRowProps()}>
+                            {row.cells.map(cell => {
+                                // deltaFunc(cell.column.id,cell.row.id);
+                                return (<td className={classes.td} {...cell.getCellProps({className: cell.column.className})}>
+                                    {deltaFunc(cell.column.id,cell.row.id)} <br></br>
+                                     {cell.render('Cell')}
+                                </td>)
+                            })}
+                        </tr>
+                    )
+                })}
+                </tbody>
             </table>
         </div>
 
     )
+
 }
 
 export default Statewise;

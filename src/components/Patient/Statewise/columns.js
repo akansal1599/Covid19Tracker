@@ -1,4 +1,4 @@
-import classes from '../Statewise.module.css';
+import classes from './Statewise.module.css';
 
 export const COLUMNS = [
     {
